@@ -111,7 +111,7 @@ burger.addEventListener('click', function() {
 		configuracion.mayusculas = !configuracion.mayusculas;
 
 		// console.log para comprobar que se activan y desactivan los numeros.
-		// console.log('Mayuscylas activadas: ' + configuracion.mayusculas);
+		console.log('Mayuscylas activadas: ' + configuracion.mayusculas);
 	});
 
 	// Evento para el boton de generar contraseña.
@@ -132,9 +132,10 @@ burger.addEventListener('click', function() {
 	
 	// Funcion que permite alternar el estilo e icono de los botones.
 	function btnToggle(elemento){
-		elemento.classList.toggle('false');
-		elemento.childNodes[0].classList.toggle('fa-check');
-		elemento.childNodes[0].classList.toggle('fa-times');
+		elemento.classList.toggle('true');
+    elemento.childNodes[1].classList.toggle('fa-check');
+		elemento.childNodes[1].classList.toggle('fa-times');
+		console.log(elemento.classList)
 	}
 	
 	// Funcion que genera la contraseña.
